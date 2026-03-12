@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Propozycja Strategiczna | Sławomir Celebias • DGSA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap"></noscript>
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -466,11 +468,11 @@
             to   { opacity: 1; transform: translateY(0); }
         }
 
-        .reveal {
+        .js-ready .reveal {
             opacity: 0; transform: translateY(24px);
             transition: opacity .7s ease, transform .7s ease;
         }
-        .reveal.visible { opacity: 1; transform: none; }
+        .js-ready .reveal.visible { opacity: 1; transform: none; }
 
         /* ─── RESPONSIVE ──────────────────────── */
         @media (max-width: 900px) {
@@ -513,4 +515,314 @@
 </nav>
 
 <!-- ══ HERO ══ -->
-<h
+<header class="hero" id="vision">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-inner">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="12" height="12"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                Propozycja Partnerska · Poufne
+            </div>
+            <h1>
+                Od Eksperta do<br>
+                <em>Lidera Rynku ADR</em><br>
+                w Polsce
+            </h1>
+            <p class="hero-sub">
+                Strategia wzrostu dla <strong>Pana Sławomira Celebiasa</strong>. Mapa działań przekształcająca Pana wyjątkową wiedzę techniczną w dominującą markę na polskim i wschodnioeuropejskim rynku logistycznym.
+            </p>
+            <div class="hero-btns">
+                <a href="#roadmap" class="btn-primary">Zobacz Strategię Wzrostu</a>
+                <a href="#model" class="btn-ghost">Warunki Współpracy</a>
+            </div>
+        </div>
+        <div class="hero-card reveal">
+            <div class="hero-card-title">Aktualna pozycja rynkowa</div>
+            <div class="stat-row">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div>
+                    <div class="stat-value">4.9 / 5.0</div>
+                    <div class="stat-label">Ocena Google</div>
+                    <div class="star-row">
+                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-row">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div>
+                    <div class="stat-value">213+</div>
+                    <div class="stat-label">Opinii Facebook · 100% pozytywnych</div>
+                </div>
+            </div>
+            <div class="stat-row">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                </div>
+                <div>
+                    <div class="stat-value">Aplikacja</div>
+                    <div class="stat-label">PlayMarket · Unikalna pozycja</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ══ ANALYSIS ══ -->
+<section id="strengths">
+    <div class="container">
+        <div class="strengths-layout">
+            <div class="strengths-sticky reveal">
+                <div class="section-eyebrow">Punkt Startowy</div>
+                <h2 class="section-title">Aktualna Pozycja Rynkowa</h2>
+                <p class="section-lead">
+                    Fundament jest wyjątkowy. Oceny, technologia i nisza geograficzna tworzą przewagę, której konkurencja nie jest w stanie szybko skopiować.
+                </p>
+                <div class="reputation-badge">
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Nienaruszona Reputacja
+                </div>
+                <div class="divider-line"></div>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card reveal">
+                    <div class="card-num">// 01</div>
+                    <h4>Niezrównany Dowód Społeczny</h4>
+                    <p>200+ idealnych opinii na Facebooku to goldmine. Brakuje jednak zorganizowanego procesu, który zamienia je w stały dopływ widoczności SEO i rankingów w wyszukiwarkach.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-num">// 02</div>
+                    <h4>Nowoczesna Infrastruktura</h4>
+                    <p>Płatności kartą i automatyczne SMS-y stawiają Pana przed 90% konkurencji, która wciąż opiera się na przestarzałych procesach operacyjnych.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-num">// 03</div>
+                    <h4>Dominacja w Niszy</h4>
+                    <p>Materiały dla rosyjskojęzycznych kierowców to ogromna przewaga konkurencyjna w nowoczesnej europejskiej sile roboczej sektora logistycznego.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-num">// 04</div>
+                    <h4>Doświadczenie Premium</h4>
+                    <p>Kawa, owoce, upominki — dbałość o komfort kursantów naturalnie generuje wysokie wskaźniki rekomendacji i lojalności klientów.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ ROADMAP ══ -->
+<section id="roadmap">
+    <div class="container">
+        <div class="roadmap-header reveal">
+            <div class="section-eyebrow">Plan Działań</div>
+            <h2 class="section-title">Strategiczny Roadmap 2026–2029</h2>
+            <p class="section-lead">Pięć filarów transformacji — od eksperta do dominującej marki ADR w regionie.</p>
+        </div>
+
+        <div class="pillars">
+
+            <div class="pillar reveal">
+                <div class="pillar-header">
+                    <div class="pillar-num">01</div>
+                    <div>
+                        <div class="pillar-label">Personal Branding</div>
+                        <h3>Autorytet „Celebias"</h3>
+                    </div>
+                    <div class="pillar-tag">Filar I</div>
+                </div>
+                <div class="pillar-body">
+                    <p>Zmiana pozycjonowania z marki firmowej na markę ekspercką. Eksperci z imienia i nazwiska pobierają wyższe stawki za konsultacje i budują głębsze zaufanie niż generyczne centra szkoleniowe. Pana certyfikat DGSA i doświadczenie stają się twarzą marki — nie tylko logo.</p>
+                </div>
+            </div>
+
+            <div class="pillar reveal">
+                <div class="pillar-header">
+                    <div class="pillar-num">02</div>
+                    <div>
+                        <div class="pillar-label">Lead Generation</div>
+                        <h3>Strategiczne Lead Magnets</h3>
+                    </div>
+                    <div class="pillar-tag">Filar II</div>
+                </div>
+                <div class="pillar-body">
+                    <p>Opracowanie <span class="highlight">„Przewodnika ADR w Pigułce"</span> w języku PL i RU. Dokument PDF pełni rolę „cichego sprzedawcy" — pozyskuje potencjalnych kursantów w fazie badań, zanim jeszcze zdecydują się na zapisy do jakiegokolwiek ośrodka.</p>
+                </div>
+            </div>
+
+            <div class="pillar reveal">
+                <div class="pillar-header">
+                    <div class="pillar-num">03</div>
+                    <div>
+                        <div class="pillar-label">Reputacja Cyfrowa</div>
+                        <h3>Silnik Opinii Online</h3>
+                    </div>
+                    <div class="pillar-tag">Filar III</div>
+                </div>
+                <div class="pillar-body">
+                    <p>Formalizacja procesu zbierania opinii na <span class="highlight">Google i Facebook</span>. Orkiestracja „Prezentu do Wyboru" zapewnia stały tygodniowy dopływ świeżego dowodu społecznego — klucz do utrzymania topowej pozycji w lokalnych wynikach wyszukiwania.</p>
+                </div>
+            </div>
+
+            <div class="pillar reveal">
+                <div class="pillar-header">
+                    <div class="pillar-num">04</div>
+                    <div>
+                        <div class="pillar-label">Audyt Językowy</div>
+                        <h3>Optymalizacja Rynku Wschodniego</h3>
+                    </div>
+                    <div class="pillar-tag">Filar IV</div>
+                </div>
+                <div class="pillar-body">
+                    <p>Profesjonalna korekta materiałów rosyjskojęzycznych. Eliminacja artefaktów tłumaczeniowych (np. <span class="highlight" style="font-family:'JetBrains Mono',monospace;font-size:12px">UN → ООН</span>) zapewnia, że marka prezentuje się na poziomie premium dla natywnych użytkowników języka rosyjskiego.</p>
+                </div>
+            </div>
+
+            <div class="pillar pillar-5 reveal">
+                <div class="pillar-header">
+                    <div class="pillar-num">05</div>
+                    <div>
+                        <div class="pillar-label">Monetyzacja Aplikacji</div>
+                        <h3>Model Freemium Value-Loop</h3>
+                    </div>
+                    <div class="pillar-tag">Filar V · Przełomowy</div>
+                </div>
+                <div class="pillar-body">
+                    <p>Uruchomienie aplikacji PlayMarket z warstwowym modelem dostępu. 12 miesięcy gratis dla opłaconych kursantów, subskrypcja (~29 PLN/mies.) dla otwartego rynku — tworząc stałe przychody powtarzalne.</p>
+                    <div class="pillar-quote">
+                        „Aplikacja transformuje Pana pozycję z dostawcy szkoleń na technologicznego partnera firm logistycznych."
+                        <span>→ Nowe pionowe przychody</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ══ OFFER ══ -->
+<section id="model">
+    <div class="container">
+        <div class="offer-grid">
+            <div class="offer-left reveal">
+                <div class="section-eyebrow">Model Współpracy</div>
+                <h2 class="section-title">Partnerstwo oparte na wynikach</h2>
+                <p class="section-lead">
+                    Oferta czysto wynikowa. Zarabiam wyłącznie wtedy, gdy Pana biznes rośnie ponad obecny poziom bazowy.
+                </p>
+
+                <div class="offer-terms">
+                    <div class="term-row highlight-row">
+                        <span class="label">Model wynagrodzenia</span>
+                        <span class="value">20% od wzrostu przychodu</span>
+                    </div>
+                    <div class="term-row">
+                        <span class="label">Opłata wstępna</span>
+                        <span class="value" style="color:#16a34a">Zerowa</span>
+                    </div>
+                    <div class="term-row">
+                        <span class="label">Czas trwania</span>
+                        <span class="value">36 miesięcy</span>
+                    </div>
+                    <div class="term-row">
+                        <span class="label">Ryzyko po Pana stronie</span>
+                        <span class="value" style="color:#16a34a">Żadne</span>
+                    </div>
+                    <div class="term-row">
+                        <span class="label">Cel</span>
+                        <span class="value">Dominacja rynkowa ADR</span>
+                    </div>
+                </div>
+
+                <p style="font-size:13px;color:var(--muted);line-height:1.7;font-style:italic;padding:20px 24px;border-left:3px solid var(--border);border-radius:0 8px 8px 0;background:#fafaf8;">
+                    Jeśli Pan zdecyduje się nie podejmować współpracy, proszę potraktować te spostrzeżenia jako wyraz wdzięczności za profesjonalizm okazany podczas mojego szkolenia ADR.
+                </p>
+            </div>
+
+            <div class="offer-card reveal">
+                <div class="offer-card-eyebrow">Propozycja Partnerska</div>
+                <div class="big-number">20<span style="font-size:40px">%</span></div>
+                <div class="big-unit">Wyłącznie od wzrostu</div>
+                <div class="offer-perks">
+                    <div class="perk">
+                        <div class="perk-check">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        Personal branding i pozycjonowanie eksperta
+                    </div>
+                    <div class="perk">
+                        <div class="perk-check">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        Strategia lead magnets PL + RU
+                    </div>
+                    <div class="perk">
+                        <div class="perk-check">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        Silnik opinii Google i Facebook
+                    </div>
+                    <div class="perk">
+                        <div class="perk-check">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        Audyt i korekta materiałów rosyjskojęzycznych
+                    </div>
+                    <div class="perk">
+                        <div class="perk-check">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        Strategia monetyzacji aplikacji freemium
+                    </div>
+                </div>
+                <hr class="offer-divider">
+                <a href="/cdn-cgi/l/email-protection#2251475045434e475a45475062454f434b4e0c414d4f1d515740484741561f72504d524d585b414843071012715650435647454b41584c43071012636670" class="cta-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    Inicjuj Rozmowę
+                </a>
+                <div class="cta-sub"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0d7e687f6a6c6168756a687f4d6a606c6461236e6260">[email&#160;protected]</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+    <div class="footer-inner">
+        <div>Dokument Poufny · <span class="footer-gold">2026</span></div>
+        <div>Attn: <span class="footer-gold">Sławomir Celebias</span>, DGSA · doradca-adr.com</div>
+    </div>
+</footer>
+
+
+<script>
+    document.documentElement.classList.add('js-ready');
+
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => entry.target.classList.add('visible'), i * 60);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.08 });
+    reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
